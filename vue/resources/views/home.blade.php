@@ -2,13 +2,17 @@
 
 @section('content')
 <div class="container">
+
     <div class="row justify-content-center">
+
         <div class="col-md-8">
 
             <div class="card">
+
                 <div class="card-header">{{ __('Bienvenido al portal de web de la F.E.UNAS!') }}</div>
 
                 <div class="card-body">
+
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
@@ -17,42 +21,59 @@
 
                     {{ __('Las actividades pendientes se visualizan aquí!') }}
 
-                    <form action="">
-                        <div class="forgroup">
-                            <label for="comentario"> Escribe un comentario </label>
-                            <input type="text" class="form-control" name=comentario>
-                        </div>
-
-                        <button type = "submit" class = "btn btn-primary">
-                            Publicar Comentario
-                        </button>
-
-                    </form>
-
                 </div>
             </div>
 
             <div class="card">
-                <div class="card-header">{{ __('Publicado!') }}</div>
 
-                <div class="card-body">
-                    <p>
-                          Comentario registrado exitosamente!!  
-                    </p>
-                </div>
+                    <form action="guardar_actividad.php" method = "POST">
+                        <div class="formgroup">
+                            <label for="titulo"> CREAR ACTIVIDAD</label>
+                            <input type="text" class="form-control" name=titulo placeholder = "Titulo de actividad" autofocus>
+                        </div>
+                        
+                        <div class="formgroup">
+                            <input type="text" class="form-control" name=descripcion placeholder = "Descripcion" autofocus>
+                        </div>    
+                        
+                        <div class="formgroup">
+                            <input type="text" class="form-control" name=fecha placeholder = "fecha" autofocus>
+                        </div>    
 
-                <div class="panelfooter">
-                    <button class="btn btn-defautl">
-                        Editar
-                    </button>
+                        <div class="formgroup">
+                            <input type="text" class="form-control" name=hora placeholder = "hora" autofocus>
+                        </div>     
 
-                    <button class="btn btn-danger">
-                        Eliminar
-                    </button>
+                        <div class="formgroup">
+                            <input type="text" class="form-control" name=lugar placeholder = "lugar" autofocus>
+                        </div> 
 
-                </div>
-                
+                        <div class="formgroup">
+                            <input type="text" class="form-control" name=multa placeholder = "multa" autofocus>
+                        </div> 
+
+                        <button type = "submit" class = "btn btn-success" name = "agregar_actividad">
+                            Agregar actividad
+                        </button>
+
+                        <button class="btn btn-secondary">
+                            Editar
+                        </button>
+
+                        <button class="btn btn-danger">
+                            Eliminar
+                        </button>
+
+                    </form>
+
             </div>
+
+            <div class="card">
+
+                <div class="formgroup">
+                
+                </div>
+
             <example-component> </example-component>
 
         </div>
