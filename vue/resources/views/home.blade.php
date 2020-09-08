@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container-fluid">
 
     <div class="row justify-content-center">
 
@@ -9,7 +9,7 @@
 
             <div class="card">
 
-                <div class="card-header">{{ __('Bienvenido al portal de web de la F.E.UNAS!') }}</div>
+                <div class="card-header">{{ __('Bienvenido al portal de web de la F.E.UNAS 2020!') }}</div>
 
                 <div class="card-body">
 
@@ -71,12 +71,13 @@
             <div class="card">
 
                 <div class="formgroup">
-                
+                <example-component> </example-component>
                 </div>
 
-            <example-component> </example-component>
+            </div>
 
-        </div>
+            
+
     </div>
 </div>
 @endsection
