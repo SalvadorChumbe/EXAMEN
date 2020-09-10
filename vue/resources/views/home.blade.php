@@ -26,7 +26,7 @@
 
             <div class="card">
 
-                    <form action="pregunta2" method = "POST">
+                    <form action="guardar_respuestas" method = "POST">
                         <div class="formgroup">
                             <label for="titulo"> Responde: </label>
                             <label for="titulo"> 1. ¿La velocidad depende del tiempo? </label>
@@ -45,18 +45,6 @@
                     
 
             </div>
-
-            <?php
-
-                        if(isset($_POST['pregunta2.blade.php'])){
-                            $true = $_POST['true']; 
-                            $false = $_POST['false'];
-
-                            $answer = $false;
-                            echo(answer);
-                        }
-
-            ?>
 
     </div>
 </div>
