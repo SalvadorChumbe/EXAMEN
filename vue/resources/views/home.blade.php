@@ -26,12 +26,12 @@
 
             <div class="card">
 
-                    <form action="pregunta2.blade.php" method = "POST">
+                    <form action="pregunta2" method = "POST">
                         <div class="formgroup">
                             <label for="titulo"> Responde: </label>
                             <label for="titulo"> 1. ¿La velocidad depende del tiempo? </label>
                            
-                        </div>    
+                        </div> 
 
                         <button type = "submit" class = "btn btn-success" name = "true">
                             Verdadero
