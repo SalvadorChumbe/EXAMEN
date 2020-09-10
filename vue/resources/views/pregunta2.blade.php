@@ -26,10 +26,10 @@
 
             <div class="card">
 
-                    <form action="pregunta2.blade.php" method = "POST">
+                    <form action="pregunta3.blade.php" method = "POST">
                         <div class="formgroup">
                             <label for="titulo"> Responde: </label>
-                            <label for="titulo"> 1. ¿La velocidad depende del tiempo? </label>
+                            <label for="titulo"> 2. La física es la ciencia basica que estudia los fenomenos de la naturaleza </label>
                            
                         </div>    
 
@@ -42,21 +42,8 @@
                         </button>
 
                     </form>
-                    
 
             </div>
-
-            <?php
-
-                        if(isset($_POST['pregunta2.blade.php'])){
-                            $true = $_POST['true']; 
-                            $false = $_POST['false'];
-
-                            $answer = $false;
-                            echo(answer);
-                        }
-
-            ?>
 
     </div>
 </div>
